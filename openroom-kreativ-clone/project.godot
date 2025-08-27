@@ -1,0 +1,111 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="OpenRoom (Godot AR Room Designer)"
+run/main_scene="uid://bnyjnhgn611a8"
+config/features=PackedStringArray("4.4")
+
+[autoload]
+
+XRToolsUserSettings="*res://addons/godot-xr-tools/user_settings/user_settings.gd"
+XRToolsRumbleManager="*res://addons/godot-xr-tools/rumble/rumble_manager.gd"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/godot-xr-tools/plugin.cfg")
+
+[filesystem]
+
+import/blender/enabled=false
+
+[input]
+
+place={
+"deadzone": 0.5,
+"events": [{
+"mouse_button": 1,
+"pressed": true,
+"type": "mouse_button"
+}]
+}
+rotate_left={
+"deadzone": 0.5,
+"events": [{
+"scancode": "Q",
+"type": "key"
+}]
+}
+rotate_right={
+"deadzone": 0.5,
+"events": [{
+"scancode": "E",
+"type": "key"
+}]
+}
+scale_up={
+"deadzone": 0.5,
+"events": [{
+"scancode": "R",
+"type": "key"
+}]
+}
+scale_down={
+"deadzone": 0.5,
+"events": [{
+"scancode": "F",
+"type": "key"
+}]
+}
+toggle_measure={
+"deadzone": 0.5,
+"events": [{
+"scancode": "M",
+"type": "key"
+}]
+}
+toggle_occluder={
+"deadzone": 0.5,
+"events": [{
+"scancode": "O",
+"type": "key"
+}]
+}
+save_scene={
+"deadzone": 0.5,
+"events": [{
+"scancode": "Ctrl+S",
+"type": "key"
+}]
+}
+load_scene={
+"deadzone": 0.5,
+"events": [{
+"scancode": "Ctrl+L",
+"type": "key"
+}]
+}
+screenshot={
+"deadzone": 0.5,
+"events": [{
+"scancode": "P",
+"type": "key"
+}]
+}
+
+[rendering]
+
+environment/defaults/default_clear_color=Color(0.1, 0.1, 0.12, 1)
+
+[xr]
+
+openxr/enabled=true
+shaders/enabled=true

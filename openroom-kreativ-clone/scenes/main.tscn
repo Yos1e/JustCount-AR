@@ -1,0 +1,66 @@
+[gd_scene load_steps=8 format=3 uid="uid://bnyjnhgn611a8"]
+
+[ext_resource type="PackedScene" uid="uid://cmusppykbyqqm" path="res://scenes/UI.tscn" id="1"]
+[ext_resource type="Script" uid="uid://cmvqbt1w40co7" path="res://scripts/placement.gd" id="2"]
+[ext_resource type="Script" uid="uid://dqhjuuqbkbf2r" path="res://scripts/measure_tool.gd" id="3"]
+[ext_resource type="Script" uid="uid://bxrut3ecfnp4a" path="res://scripts/occluder_tool.gd" id="4"]
+
+[sub_resource type="Environment" id="5"]
+background_mode = 2
+ambient_light_color = Color(1, 1, 1, 1)
+ssao_enabled = true
+ssao_radius = 0.5
+ssao_intensity = 1.0
+ssil_enabled = true
+sdfgi_enabled = true
+sdfgi_min_cell_size = 0.5
+
+[sub_resource type="StandardMaterial3D" id="6"]
+albedo_color = Color(0.2, 0.2, 0.22, 1)
+
+[sub_resource type="BoxMesh" id="7"]
+size = Vector3(20, 0.1, 20)
+
+[node name="Main" type="XROrigin3D"]
+
+[node name="UI" parent="." instance=ExtResource("1")]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("5")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.866024, 4.47035e-08, 0.500003, 0.250007, 0.866019, -0.433021, -0.433012, 0.500011, 0.749993, 0, 2, 0)
+light_energy = 2.0
+shadow_enabled = true
+
+[node name="Ground" type="StaticBody3D" parent="."]
+
+[node name="GroundMesh" type="MeshInstance3D" parent="Ground"]
+material_override = SubResource("6")
+mesh = SubResource("7")
+
+[node name="LeftController" type="XRController3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.01285, 0)
+tracker = &"left_hand"
+
+[node name="LeftControllerRay" type="RayCast3D" parent="LeftController"]
+enabled = false
+
+[node name="RightController" type="XRController3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.44042, 0)
+tracker = &"right_hand"
+
+[node name="RightControllerRay" type="RayCast3D" parent="RightController"]
+
+[node name="Placement" type="Node" parent="."]
+script = ExtResource("2")
+
+[node name="MeasureTool" type="Node3D" parent="."]
+script = ExtResource("3")
+
+[node name="OccluderTool" type="Node3D" parent="."]
+script = ExtResource("4")
+
+[node name="XRCamera3D" type="XRCamera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7, 0)
+current = true

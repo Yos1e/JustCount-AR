@@ -1,0 +1,10 @@
+https://sketchfab.com/3d-models/ikea-alex-drawer-unit-b0a85651bffc4a498144f058e243f003
+https://sketchfab.com/3d-models/ikea-billy-bookshelf-white-80x28x202-cm-4d7e840d4d3d403d8f8639dfa4972719
+https://sketchfab.com/3d-models/sofa-ikea-askesta-8096984ae8734db9bfa5dedf89c175a7
+https://sketchfab.com/3d-models/office-chair-af2f07d06f6349158c1d24d87f5ceb95
+https://sketchfab.com/3d-models/coffee-table-664a3190da6b4ee08c4f1d5d79e2a20e
+https://sketchfab.com/3d-models/bed-ikea-18e58d1b1ce84f9787f140a7667e2215
+https://sketchfab.com/3d-models/lamp-melodi-ikea-c6ad5bcc9af94198b8ed5efa36eb0eeb#download
+https://sketchfab.com/3d-models/flowers-stand-ikea-8c361ab07ae54abda7e035a53e3d79c4#download
+https://sketchfab.com/3d-models/clock-e44ef161cef546c7a0785f94a968d074#download
+https://sketchfab.com/3d-models/stool-9a9b263ef78c40d6bf26eb74a38265c7
