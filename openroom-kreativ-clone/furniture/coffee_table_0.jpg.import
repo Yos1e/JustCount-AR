@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://gsq4pa3f2o14"
 path.s3tc="res://.godot/imported/coffee_table_0.jpg-cc71794e2165222b86395a44b738f4d9.s3tc.ctex"
+path.etc2="res://.godot/imported/coffee_table_0.jpg-cc71794e2165222b86395a44b738f4d9.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://furniture/coffee_table_0.jpg"
-dest_files=["res://.godot/imported/coffee_table_0.jpg-cc71794e2165222b86395a44b738f4d9.s3tc.ctex"]
+dest_files=["res://.godot/imported/coffee_table_0.jpg-cc71794e2165222b86395a44b738f4d9.s3tc.ctex", "res://.godot/imported/coffee_table_0.jpg-cc71794e2165222b86395a44b738f4d9.etc2.ctex"]
 
 [params]
 

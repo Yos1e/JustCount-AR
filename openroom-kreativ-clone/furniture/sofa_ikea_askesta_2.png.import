@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://b675ty8idumd3"
 path.s3tc="res://.godot/imported/sofa_ikea_askesta_2.png-78dd508a56a3711430d956eed48497e2.s3tc.ctex"
+path.etc2="res://.godot/imported/sofa_ikea_askesta_2.png-78dd508a56a3711430d956eed48497e2.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://furniture/sofa_ikea_askesta_2.png"
-dest_files=["res://.godot/imported/sofa_ikea_askesta_2.png-78dd508a56a3711430d956eed48497e2.s3tc.ctex"]
+dest_files=["res://.godot/imported/sofa_ikea_askesta_2.png-78dd508a56a3711430d956eed48497e2.s3tc.ctex", "res://.godot/imported/sofa_ikea_askesta_2.png-78dd508a56a3711430d956eed48497e2.etc2.ctex"]
 
 [params]
 
