@@ -1,3 +1,4 @@
 # Godot 4+ specific ignores
 .godot/
 /android/
+openroom-kreativ-clone/android/build/build/intermediates/compressed_assets/standardDebug/out/assets/addons/godot-xr-tools/hands/textures/glove_fingerless_occlusionRoughnessMetallic.png.import.jar
