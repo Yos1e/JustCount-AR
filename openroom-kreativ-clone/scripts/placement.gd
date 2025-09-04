@@ -30,10 +30,10 @@ func _ready() -> void:
 	spawn_ghost()
 
 	# Quick test cube to ensure visibility
-	var test_cube = MeshInstance3D.new()
-	test_cube.mesh = BoxMesh.new()
-	test_cube.global_transform.origin = Vector3(0, 1.5, -2)
-	get_parent().add_child(test_cube)
+	#var test_cube = MeshInstance3D.new()
+	#test_cube.mesh = BoxMesh.new()
+	#test_cube.global_transform.origin = Vector3(0, 1.5, -2)
+	#get_parent().add_child_call_deffered(test_cube)
 
 func _process(delta: float) -> void:
 	if not ghost_instance or not ray:
