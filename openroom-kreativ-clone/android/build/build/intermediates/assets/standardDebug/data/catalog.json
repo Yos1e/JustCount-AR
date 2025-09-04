@@ -1,0 +1,10 @@
+{
+  "Furniture": [
+{
+  "id": "billy01",
+  "name": "Billy",
+  "model_path": "res://furniture/Billy.glb",
+  "tags": ["Bookcase", "Storage"]
+}
+]
+}
